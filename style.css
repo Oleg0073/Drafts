@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*,
+::after,
+*,
+::before {
+    box-sizing: inherit;
+}
+
+body {}
+
+a {}
+
+.container {
+    max-width: 1180px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #FFF8F3;
+}
+
+.header__inner {
+    padding-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__list{
+    display: flex;
+    gap: 20px;
+}
