@@ -85,8 +85,21 @@ ul {
     width: 20px;
     height: 20px;
     left: -23px;
-    top: 3px;
+    top: -2px;
 }
+
+.main{
+    background-color: #FFF8F3;
+}
+
+.top{
+    padding-bottom: 150px;
+}
+
+
+
+
+
 
 
 .footer {
