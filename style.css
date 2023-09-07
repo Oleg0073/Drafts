@@ -36,17 +36,21 @@ ul {
 
 .menu__btn{
     display: none;
-    display: flex;
     width: 30px;
     height: 25px;
     border: none;
     border-color: transparent;
     padding: 0;
     border-radius: 0;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.menu__btn span{
 
+.menu__btn span{
+    height: 1px;
+    background-color: #7B6152;
+    width: 100%;
 }
 
 .header {
@@ -161,10 +165,30 @@ ul {
             padding-right: 10px;
         }
 
-        .menu__list {
+        .header__menu-list {
             display: none;
         }
         .menu__btn {
-            display: block;
+            display: flex;
+        }
+        .header__menu{
+            order: 1;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .footer__inner{
+            flex-direction: column;
+        }
+        .footer__menu{
+            padding: 50px 0;
+            text-align: center;
+        }
+        .footer__menu-list{
+            flex-direction: column;
+        }
+        .footer{
+            padding: 50px 0;
+            font-size: 14px;
         }
     }
