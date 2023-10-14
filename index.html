@@ -52,7 +52,7 @@
     </header>
 <main class="main">
     <section class="top">
-        <div class="container">
+        <div class="container top__inner">
             <div class="top__content">
                 <h3 class="top__title">
                     Створіть атмосферу затишку та гармонії!
@@ -64,9 +64,11 @@
                         Купити
                     </button>
             </div>
-            <div class="picture class=".top__img">
-                <img src="images/top-l.png" alt="">
-            </div>
+            <picture class=".top__img">
+                <source class="top__img-m" srcset="images/top__img-m.png" media="(min-widht: 480px)">
+                <img class="top__img-l" src="images/top-l.png"
+                 alt="">
+            </picture>
             
             
         </div>

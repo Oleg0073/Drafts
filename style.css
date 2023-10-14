@@ -94,16 +94,22 @@ button{
 
 .main{
     background-color: #FFF8F3;
+    overflow-x: clip;
 }
 
 .top{
 padding: 40px 0 150px;
 }
 
+.top__inner{
+    position: relative;
+}
+
 .top__content{
     width: 370px;
-    padding-top: 150px;
+    padding-top: 150px 0 250px;
 }
+
 
 .top__title{
 font-family: 'Yeseva One', cursive;
@@ -125,11 +131,8 @@ margin-bottom: 48px;
 
 .top__img{
     position: absolute;
+    top: 0;
 }
-
-
-
-
 
 
 .footer {
@@ -160,12 +163,30 @@ margin-bottom: 48px;
 }
 
 
+
+
+
+
 @media (max-width: 1000px) {
     .container {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .top__content{
+        width: 333px;
+        padding: 95px 0 70px;
+    }
+    .top__img-l{
+        width: 665px;
+    }
+    .top__img{
+        left: 300px;
+    }
+    .top__text{
+        margin-bottom: 20px;
+    }
 }
+
 
 @media (max-width: 900px) {
     .footer__inner {
@@ -187,19 +208,31 @@ margin-bottom: 48px;
     body {
         font-size: 10px;
     }
-
-    .container {
+.container {
         max-width: 640px;
     }
-
-
-    .phone::before {
+.phone::before {
         width: 14px;
         height: 14px;
         left: -16px;
         top: -2px;
         background-size: cover;
     }
+    .top__content{
+        width: 230px;
+    }
+    .top__title{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .top__text{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .top__img{
+        left: 180px;
+    }
+}
 
 
     @media (max-width: 640px) {
